@@ -50,7 +50,7 @@ public class Solution
         return
         [
             string.Format(CultureInfo.InvariantCulture, "${0:N2}", maxCredit),
-        string.Format(CultureInfo.InvariantCulture, "${0:N2}", maxDebit)
+            string.Format(CultureInfo.InvariantCulture, "${0:N2}", maxDebit)
         ];
     }
 
