@@ -18,8 +18,14 @@ public class TransactionService : IHostedService
     {
         _client = client;
         _logger = logger;
-        _name = config["name"] ?? "Bob Martin";
-        _city = config["city"] ?? "Bourg";
+        _name = config["name"] ?? "";
+        _city = config["city"] ?? "";
+
+        if (string.IsNullOrWhiteSpace(_name) || string.IsNullOrWhiteSpace(_city))
+        {
+            _logger.LogError("Name and City must be provided and cannot be empty or whitespace. Exiting program.");
+            Environment.Exit(1);
+        }
     }
 
     private async Task<List<string>> TransferAmount(string name, string city, CancellationToken cancellationToken)

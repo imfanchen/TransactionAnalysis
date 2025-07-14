@@ -108,5 +108,9 @@ Bob Martin (Bourg) debit $889.53
 ## 💬 To Run
 
 ```sh
+# Max Credit: $3,717.84 | Max Debit: $3,568.55
 dotnet run --name "Bob Martin" --city "Bourg"
+
+# Max Credit: $3,288.97 | Max Debit: $3,807.28
+dotnet run --name "Helena Fernandez" --city "Ilchester"
 ```
