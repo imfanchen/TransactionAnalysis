@@ -105,8 +105,8 @@ Bob Martin (Bourg) debit $889.53
 
 ---
 
-## 💬 Dependencies
+## 💬 To Run
 
-- `System.Net.Http`
-- `System.Text.Json`
-- `System.Globalization`
+```sh
+dotnet run --name "Bob Martin" --city "Bourg"
+```
